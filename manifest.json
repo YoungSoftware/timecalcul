@@ -1,0 +1,21 @@
+{
+    "name": "Average Time Calculator",
+    "short_name": "TimeCalc",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#00ff00",
+    "description": "A simple app to calculate average time.",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

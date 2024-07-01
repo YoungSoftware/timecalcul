@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Time Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Average Time Calculator</h1>
+        <div id="timeFramesContainer">
+            <div class="time-frame">
+                <label for="time1">Time 1 (mm:ss): </label>
+                <input type="text" id="time1" placeholder="mm:ss" oninput="autoFormatTime(event)" onblur="validateTime(event)"><br>
+            </div>
+            <div class="time-frame">
+                <label for="time2">Time 2 (mm:ss): </label>
+                <input type="text" id="time2" placeholder="mm:ss" oninput="autoFormatTime(event)" onblur="validateTime(event)"><br>
+            </div>
+            <div class="time-frame">
+                <label for="time3">Time 3 (mm:ss): </label>
+                <input type="text" id="time3" placeholder="mm:ss" oninput="autoFormatTime(event)" onblur="validateTime(event)"><br>
+            </div>
+            <div class="time-frame">
+                <label for="time4">Time 4 (mm:ss): </label>
+                <input type="text" id="time4" placeholder="mm:ss" oninput="autoFormatTime(event)" onblur="validateTime(event)"><br>
+            </div>
+            <div class="time-frame">
+                <label for="time5">Time 5 (mm:ss): </label>
+                <input type="text" id="time5" placeholder="mm:ss" oninput="autoFormatTime(event)" onblur="validateTime(event)"><br>
+            </div>
+        </div>
+        <button onclick="addTimeFrame()">Add Time Frame</button>
+        <button onclick="calculateAverage()">Calculate Average</button>
+        <h2 id="average"></h2>
+    </div>
+</body>
+</html>
